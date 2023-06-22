@@ -1,0 +1,109 @@
+.container {
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    margin: 1rem;
+    text-align: center;
+    margin-left: 50px;
+  }
+  
+  body {
+    background-color: rgb(89, 104, 104);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .timer,
+  .stopwatch {
+    text-align: center;
+    margin-bottom: 20rem;
+    height: 30rem;
+    width: 34rem;
+    margin-left: 27rem;
+  }
+  
+  .circle {
+    background-color: palegoldenrod;
+    border-radius: 104rem;
+    padding: 5rem;
+    height: 14rem;
+    width: 14rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
+  
+  p {
+    font-size: 4rem;
+    margin-left: 0;
+    margin-bottom: 3rem;
+  }
+  
+  .timer {
+    background-color: rgb(229, 190, 142);
+    text-align: center;
+  }
+  
+  .stopwatch {
+    background-color: rgb(142, 223, 229);
+  }
+  
+  .button-grid {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  button {
+    height: 3rem;
+    width: 8rem;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .button-group button {
+    margin-right: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: inherit;
+  }
+  
+  .button-group button.active {
+    text-decoration: none;
+  }
+  
+  .button-group button:focus {
+    outline: none;
+  }
+  
+  .timer-settings {
+    margin-top: 2rem;
+  }
+  
+  .timer-settings button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: inherit;
+  }
+  
+  .timer-settings button:focus {
+    outline: none;
+  }
+  
