@@ -1,11 +1,9 @@
-// Timer variables
 let timerInterval;
 let timerSeconds = 0;
 let timerDuration = 10;
-
-// Stopwatch variables
 let stopwatchInterval;
 let stopwatchSeconds = 0;
+
 
 // Timer functions
 function startTimer() {
@@ -16,7 +14,7 @@ function startTimer() {
       displayTime("timer", timerDuration - timerSeconds);
     } else {
       stopTimer();
-      alert("Timer completed!"); // Display a message when the timer reaches zero
+      alert("Timer completed!"); 
     }
   }, 1000);
 }
@@ -66,7 +64,7 @@ function resetStopwatch() {
   displayTime("stopwatch", stopwatchSeconds);
 }
 
-// Helper function to display time in HH:MM:SS format
+
 function displayTime(elementId, seconds) {
   const hours = Math.floor(seconds / 3600);
   const minutes = Math.floor((seconds % 3600) / 60);
@@ -76,25 +74,21 @@ function displayTime(elementId, seconds) {
   document.getElementById(elementId).textContent = timeString;
 }
 
-// Helper function to add leading zero if value is less than 10
+
 function padZero(value) {
   return value < 10 ? `0${value}` : value;
 }
 
-// Event listeners for timer buttons
+
 document.getElementById("startTimer").addEventListener("click", startTimer);
 document.getElementById("stopTimer").addEventListener("click", stopTimer);
 document.getElementById("resetTimer").addEventListener("click", resetTimer);
-
-// Event listeners for stopwatch buttons
 document.getElementById("startStopwatch").addEventListener("click", startStopwatch);
 document.getElementById("stopStopwatch").addEventListener("click", stopStopwatch);
 document.getElementById("resetStopwatch").addEventListener("click", resetStopwatch);
-
-// Event listener for the updateTimer button
 document.getElementById("updateTimer").addEventListener("click", updateTimerDuration);
 
-// Event listener for the timer and stopwatch buttons
+
 const timerButton = document.getElementById("timerButton");
 const stopwatchButton = document.getElementById("stopwatchButton");
 const timerSection = document.getElementById("timerSection");
@@ -117,7 +111,6 @@ function showStopwatch() {
   stopwatchSection.style.display = "block";
 }
 
-// Initial setup
 showTimer();
 displayTime("timer", timerDuration);
 displayTime("stopwatch", stopwatchSeconds);

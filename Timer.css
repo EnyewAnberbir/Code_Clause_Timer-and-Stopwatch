@@ -12,7 +12,9 @@
   }
   
   body {
-    background-color: rgb(89, 104, 104);
+    background-image: url("bac.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   h1 {
@@ -45,18 +47,25 @@
   }
   
   .timer {
-    background-color: rgb(229, 190, 142);
+    background-image: url("back.webp");
+
+    background-size:contain;
     text-align: center;
   }
   
   .stopwatch {
-    background-color: rgb(142, 223, 229);
+    background-image: url("back1.jpeg");
   }
   
   .button-grid {
     display: grid;
     margin-top: 2rem;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .button-grid1 {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
   }
   
   button {
